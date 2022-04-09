@@ -20,6 +20,17 @@ func main() {
 
 	shittyWithAnInput(shittyValue)
 
+	// function literal or anonymuse function
+	(func() {
+		log.Print("I'm shitty function literal")
+	})()
+
+	anotherShittyfunctionLiteral := (func() {
+		log.Print("I'm another shitty function literal")
+	})
+
+	anotherShittyfunctionLiteral()
+
 }
 
 // define a void function
